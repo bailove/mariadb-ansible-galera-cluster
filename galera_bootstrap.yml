@@ -1,5 +1,6 @@
 ---
 - hosts: galera_cluster
+  gather_facts: True
   serial: 1
   roles:
     - galera_bootstrap

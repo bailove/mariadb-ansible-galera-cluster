@@ -1,7 +1,8 @@
 ---
 - hosts: galera_cluster
+  gather_facts: True
   roles:
-    - { role: security, tags: [ 'setup' ] }
+#    - { role: security, tags: [ 'setup' ] }
     - { role: galera_repos, tags: [ 'setup', 'packages' ] }
     - { role: galera_packages, tags: [ 'setup', 'packages' ] }
     - { role: galera_conf, tags: [ 'config' ] }

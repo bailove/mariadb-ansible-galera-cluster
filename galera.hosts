@@ -1,2 +1,4 @@
 [galera_cluster]
-galera-db-[01:03] ansible_user=root
+#galera-db-[01:03] ansible_user=root
+galera-db-01 ansible_user=root
+galera-db-03 ansible_user=root
